@@ -29,7 +29,8 @@
                         session_start();
                         if (isset($_SESSION['user'])) {
                             echo '<h4 style="font-family:verdana;">Welcome ' . $_SESSION['user'] . '!</h4>';
-                            echo '<br/><a class="btn btn-lg btn-primary btn-block text-uppercase" href="logout.php?logout">logout</a>';
+                            echo '<br/><h4>Поздравляем! Вы успешно выполнили лабораторную работу!</h4>';
+                            echo '<br/><a class="btn btn-lg btn-primary btn-block text-uppercase" href="logout.php?logout">Завершить</a>';
                         } else {
                             header("location:index.php");
                         }
